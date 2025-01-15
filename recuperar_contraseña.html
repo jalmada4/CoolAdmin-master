@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>SySPro</title>
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="../assets/vendor/css/pages/page-auth.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="background-image: radial-gradient(circle, #b94bf8, #3a1957); margin: 0; height: 100vh;">
+    67g
+    <!-- Content -->
+
+    <div style="margin: 20px 400px 400px 400px; ">
+        <div style="background-color: cornflowerblue;" class="authentication-wrapper authentication-basic container-p-y">
+            <div style="background-color: cornflowerblue;" class="authentication-inner py-4">
+                <!-- Forgot Password -->
+                <div style="background-color: cornflowerblue;" class="card">
+                    <div class="card-body">
+                        <!-- Logo -->
+                        <div class="app-brand justify-content-center">
+                            <a href="index.html" class="app-brand-link gap-2">
+
+                                <span class="app-brand-text demo text-body fw-bolder">SySPro</span>
+                            </a>
+                        </div>
+                        <!-- /Logo -->
+                        <h4 class="mb-2">Olvidaste tu contraseña? 🔒</h4>
+                        <p class="mb-4">Ingresa tu email y te enviaremos la nueva contraseña</p>
+                        <div class="container mt-5">
+                            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                        <use xlink:href="#exclamation-triangle-fill"></use>
+                    </svg>
+                                <div>
+                                    <strong>¡Atención!</strong> Revise su correo electrónico.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap Icons -->
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.964 0L.165 13.233c-.457.778.091 1.767.982 1.767h13.706c.89 0 1.439-.99.982-1.767L8.982 1.566zm-.982 4.905c.535 0 .954.462.954 1.05v2.1c0 .588-.42 1.05-.954 1.05-.535 0-.954-.462-.954-1.05v-2.1c0-.588.42-1.05.954-1.05zm0 6.445a.905.905 0 1 0 0-1.81.905.905 0 0 0 0 1.81z"/>
+                </symbol>
+            </svg>
+
+                        <!-- Form to recover password -->
+                        <form action="procesarRecuperarClave.php" method="POST" class="mt-4">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su correo" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar nueva contraseña</button>
+                        </form>
+
+                        <div class="text-center mt-4">
+                            <a href="index.php" class="d-flex align-items-center justify-content-center">
+                                <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i> Volver al inicio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Forgot Password -->
+            </div>
+        </div>
+    </div>
+
+    <!-- / Content -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+</body>
+
+</html>
